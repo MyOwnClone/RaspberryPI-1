@@ -9,8 +9,8 @@ http://www.techotopia.com/index.php/Installing_and_Using_GNUstep_and_Objective-C
 GLCube:
 This sample project show the "hello triangle" example running in an objc shell.
 
-commands:  
-  compile: Compile the app.  
-  crun: Compile and run the app.  
-  run: Run the app.  
+#####commands:  
+  *compile: Compile the app.  
+  *crun: Compile and run the app.  
+  *run: Run the app.  
 
