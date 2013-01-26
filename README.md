@@ -1,9 +1,9 @@
 RaspberryPI
 ===========
 
-Repository to hold my Raspberry pi projects
+**Repository to hold my Raspberry pi projects**
 
-NOTE: Be sure to install GNUstep for these projects to work.
+**NOTE:** Be sure to install GNUstep for these projects to work.
 http://www.techotopia.com/index.php/Installing_and_Using_GNUstep_and_Objective-C_on_Linux
 
 ###GLCube:  
