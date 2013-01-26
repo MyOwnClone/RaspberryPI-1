@@ -12,11 +12,15 @@ LDFLAGS = -L/opt/vc/lib -lbcm_host -lEGL -lGLESv2 -lOpenVG
 # Add Headers
 OpenApp_HEADERS = OpenApp.h
 OpenApp_HEADERS += TestAppDelegate.h
+OpenApp_HEADERS += KDisplayManager.h
+OpenApp_HEADERS += KDisplayObject.h
 
 # Add Source Files
 OpenApp_OBJC_FILES = main.m
 OpenApp_OBJC_FILES += OpenApp.m
 OpenApp_OBJC_FILES += TestAppDelegate.m
+OpenApp_OBJC_FILES += KDisplayManager.m
+OpenApp_OBJC_FILES += KDisplayObject.m
 
 # Add Resources
 OpenApp_RESOURCE_FILES = 

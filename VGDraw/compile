@@ -9,6 +9,8 @@ cp main.m build/main.m
 cp GNUmakefile build/GNUmakefile 
 cp Classes/TestAppDelegate.m Classes/TestAppDelegate.h build
 cp Classes/OpenApp.m Classes/OpenApp.h build
+cp Classes/KDisplay/KDisplayManager.m Classes/KDisplay/KDisplayManager.h build
+cp Classes/KDisplay/KDisplayObject.m Classes/KDisplay/KDisplayObject.h build
 
 echo "Compiling..."
 cd build
