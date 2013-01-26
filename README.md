@@ -10,7 +10,7 @@ GLCube:
 This sample project show the "hello triangle" example running in an objc shell.
 
 #####commands:  
-  *compile: Compile the app.  
-  *crun: Compile and run the app.  
-  *run: Run the app.  
+  * compile: Compile the app.  
+  * crun: Compile and run the app.  
+  * run: Run the app.  
 
