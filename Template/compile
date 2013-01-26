@@ -1,0 +1,17 @@
+# /bin/sh
+
+echo "Cleaning..."
+rm -rf build
+mkdir build
+
+echo "Copying..."
+cp main.m build/main.m
+cp GNUmakefile build/GNUmakefile 
+cp Classes/TestAppDelegate.m Classes/TestAppDelegate.h build
+cp Classes/OpenApp.m Classes/OpenApp.h build
+
+echo "Compiling..."
+cd build
+make
+
+echo "Complete"
