@@ -1,0 +1,4 @@
+. /usr/share/GNUstep/Makefiles/GNUstep.sh
+./compile
+cd build/obj/
+./OpenApp
