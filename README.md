@@ -14,8 +14,8 @@ http://www.techotopia.com/index.php/Installing_and_Using_GNUstep_and_Objective-C
 
 ###VGDraw
 **This project will see the most active development. I am planning to build an Objective-C wrapper around OpenVG**   
-    The purpse of this will be to create an easy way to create games and apps based on OpenVG drawing.     
-    * **Same commands as the Template**
+The purpse of this will be to create an easy way to create games and apps based on OpenVG drawing.     
+  * **Same commands as the Template**
 
 ###GLCube:  
 **This sample project show the "hello triangle" example running in an objc shell.**  
