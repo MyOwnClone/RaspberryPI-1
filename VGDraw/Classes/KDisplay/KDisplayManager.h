@@ -8,6 +8,11 @@
 @interface KDisplayManager : NSObject
 
 /**
+ *
+ */
++ (KDisplayManager *)sharedInstance;
+
+/**
  * Method used to startup the display.
  */
 - (void)startUp;
