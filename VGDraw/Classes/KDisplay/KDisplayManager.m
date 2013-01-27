@@ -1,5 +1,18 @@
 #import "KDisplayManager.h"
-#import "bcm_host.h"
+
+#include "bcm_host.h"
+#import "EGLState.h"
+
+/**
+ * State of the display.
+ */
+static STATE_T _state, *state = &_state;
+
+@interface KDisplayManager ()
+
+
+
+@end
 
 @implementation KDisplayManager
 
@@ -21,6 +34,20 @@ static void *volatile sharedInstance = nil;
 	}
 
 	return singleton;
+}
+
+- (id)init
+{
+	self = [super init];
+
+	if (self != nil)
+	{
+		bcm_host_init();
+		memset(state, 0, sizeof(*state));
+		oglinit(state);
+	}
+
+	return self;
 }
 
 - (void)loadRootDisplayObject:(KDisplayObject *)displayObject

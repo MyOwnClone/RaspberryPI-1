@@ -15,6 +15,7 @@ OpenApp_HEADERS += TestAppDelegate.h
 OpenApp_HEADERS += KDisplayManager.h
 OpenApp_HEADERS += KDisplayObject.h
 OpenApp_HEADERS += AppRootView.h
+OpenApp_HEADERS += EGLState.h
 
 # Add Source Files
 OpenApp_OBJC_FILES = main.m

@@ -7,6 +7,7 @@ mkdir build
 echo "Copying..."
 cp main.m build/main.m
 cp GNUmakefile build/GNUmakefile 
+cp Classes/KDisplay/EGL/EGLState.h build
 cp Classes/TestAppDelegate.m Classes/TestAppDelegate.h build
 cp Classes/OpenApp.m Classes/OpenApp.h build
 cp Classes/KDisplay/KDisplayManager.m Classes/KDisplay/KDisplayManager.h build
