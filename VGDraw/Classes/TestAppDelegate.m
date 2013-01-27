@@ -1,21 +1,20 @@
 #import "TestAppDelegate.h"
 #import <unistd.h>
+#import "KDisplayManager.h"
+#import "AppRootView.h"
 
 @implementation TestAppDelegate
 
-- (void)dealloc
-{
-    [super dealloc];
-}
-
 - (void)appDidFinishLaunching
 {
-    NSLog(@"appDidFinishLaunching");    
+	AppRootView *rootView = [[AppRootView alloc] init];
+	[[KDisplayManager sharedInstance] loadRootDisplayObject:rootView];
+	[rootView release];
 }
 
 - (void)appRunLoop
 {
-    usleep(5*1000);
+	[[KDisplayManager sharedInstance] loop];
 }
 
 @end

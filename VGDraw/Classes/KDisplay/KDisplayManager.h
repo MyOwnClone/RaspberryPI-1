@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "KDisplayObject.h"
 
 /**
  * Display Manager Class
@@ -6,20 +7,25 @@
  * @author Jed Laudenslayer
  */
 @interface KDisplayManager : NSObject
+{
+	KDisplayObject *rootObject_;
+}
 
 /**
- *
+ * Singleton Method
  */
 + (KDisplayManager *)sharedInstance;
 
 /**
- * Method used to startup the display.
+ * Method used to load and set a root display object.
+ *
+ * @param displayObject The object to use as the root of your display.
  */
-- (void)startUp;
+- (void)loadRootDisplayObject:(KDisplayObject *)displayObject;
 
 /**
- * Method used to shut down the display.
+ * Main display loop.
  */
-- (void)shutDown;
+- (void)loop;
 
 @end
