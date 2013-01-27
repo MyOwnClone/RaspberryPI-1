@@ -1,5 +1,8 @@
 #import <Foundation/Foundation.h>
 
+#include "VG/openvg.h"
+#include "VG/vgu.h"
+
 /**
  * Base object used for display
  *
@@ -7,21 +10,19 @@
  */
 @interface KDisplayObject : NSObject
 {
-	BOOL skipRedraw_;
-	
-	float width_;
-	float height_;
+	VGfloat width_;
+	VGfloat height_;
 }
 
 /**
  * The width of the display object.
  */
-@property (nonatomic, assign) float width;
+@property (nonatomic, assign) VGfloat width;
 
 /**
  * The height of the display object.
  */
-@property (nonatomic, assign) float height;
+@property (nonatomic, assign) VGfloat height;
 
 /**
  * Method called by the display manager to render this object.
