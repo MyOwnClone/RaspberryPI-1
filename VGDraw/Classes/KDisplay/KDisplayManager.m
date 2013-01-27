@@ -1,6 +1,5 @@
 #import "KDisplayManager.h"
 #import "bcm_host.h"
-#import <libkern/OSAtomic.h>
 
 @implementation KDisplayManager
 
@@ -8,25 +7,30 @@ static void * volatile sharedInstance = nil;
 
 + (KDisplayManager *)sharedInstance
 {
-    while (!sharedInstance)
-    {
-        KDisplayManager *temp = [[self alloc] init];
-        if(!OSAtomicCompareAndSwapPtrBarrier(0x0, temp, &sharedInstance))
-        {
-            [temp release];
-        }
-    }
-    return sharedInstance;
+	static KDisplayManager *singleton = nil;
+
+	if (!singleton)
+	{
+		@synchronized(self)
+		{
+			if (!singleton)
+			{
+				singleton = [KDisplayManager new];
+			}
+		}
+	}
+
+	return singleton;
 }
 
 - (void)startUp
 {
-    
+
 }
 
 - (void)shutDown
 {
-    
+
 }
 
 @end
