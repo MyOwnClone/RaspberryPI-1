@@ -8,12 +8,6 @@
  */
 static STATE_T _state, *state = &_state;
 
-@interface KDisplayManager ()
-
-
-
-@end
-
 @implementation KDisplayManager
 
 static void *volatile sharedInstance = nil;
@@ -50,10 +44,15 @@ static void *volatile sharedInstance = nil;
 	return self;
 }
 
+- (void)dealloc
+{
+	eglSwapBuffers(state->display, state->surface);
+	
+	[super dealloc];
+}
+
 - (void)loadRootDisplayObject:(KDisplayObject *)displayObject
 {
-	NSLog(@"loadRootDisplayObject: %@", displayObject);
-
 	if (rootObject_ != nil)
 	{
 		[rootObject_ release];
@@ -61,16 +60,19 @@ static void *volatile sharedInstance = nil;
 	}
 
 	rootObject_ = [displayObject retain];
+	
+	rootObject_.width = (float)state->screen_width;
+	rootObject_.height = (float)state->screen_height;
 }
 
 - (void)loop
 {
 	if (rootObject_ != nil)
 	{
-		// Process all view rendering here.
+		[rootObject_ render];
+		eglSwapBuffers(state->display, state->surface);
 	}
 
-	// This may need to be modified?
 	usleep(5*1000);
 }
 
