@@ -1,8 +1,7 @@
-#include "EGL/egl.h"
-#include "GLES/gl.h"
-#include "eglstate.h"
-#include "bcm_host.h"
-#include <assert.h>
+#import "EGL/egl.h"
+#import "GLES/gl.h"
+#import "bcm_host.h"
+#import <assert.h>
 
 typedef struct
 {

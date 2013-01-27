@@ -1,6 +1,6 @@
 #import "KDisplayManager.h"
 
-#include "bcm_host.h"
+#import "bcm_host.h"
 #import "EGLState.h"
 
 /**
