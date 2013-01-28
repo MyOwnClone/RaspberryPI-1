@@ -16,6 +16,8 @@ echo "Compiling..."
 cd build
 make
 
+cd ../
+
 echo "Copying Resources..."
 find Resources -iname '*.raw' -exec cp \{\} build/obj/ \;
 
