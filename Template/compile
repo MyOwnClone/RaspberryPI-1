@@ -4,11 +4,13 @@ echo "Cleaning..."
 rm -rf build
 mkdir build
 
-echo "Copying..."
+echo "Copying Sources..."
 cp main.m build/main.m
 cp GNUmakefile build/GNUmakefile 
-cp Classes/TestAppDelegate.m Classes/TestAppDelegate.h build
-cp Classes/OpenApp.m Classes/OpenApp.h build
+
+echo "Copying Classes..."
+find Classes -iname '*.h' -exec cp \{\} build/ \;
+find Classes -iname '*.m' -exec cp \{\} build/ \;
 
 echo "Compiling..."
 cd build
