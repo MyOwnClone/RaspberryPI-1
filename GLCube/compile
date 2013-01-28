@@ -1,25 +1,22 @@
-#! /bin/sh
+# /bin/sh
 
 echo "Cleaning..."
 rm -rf build
 mkdir build
 
-echo "Copying..."
+echo "Copying Sources..."
 cp main.m build/main.m
 cp GNUmakefile build/GNUmakefile 
-cp Classes/TestAppDelegate.m Classes/TestAppDelegate.h build
-cp Classes/OpenApp.m Classes/OpenApp.h build
-cp Classes/Cube.m Classes/Cube.h build
-cp Classes/cube_texture_and_coords.h build
+
+echo "Copying Classes..."
+find Classes -iname '*.h' -exec cp \{\} build/ \;
+find Classes -iname '*.m' -exec cp \{\} build/ \;
 
 echo "Compiling..."
 cd build
 make
 
-cd ../
-
-cp Resources/Lucca_128_128.raw build/obj
-cp Resources/Gaudi_128_128.raw build/obj
-cp Resources/Djenne_128_128.raw build/obj
+echo "Copying Resources..."
+find Resources -iname '*.raw' -exec cp \{\} build/obj/ \;
 
 echo "Complete"
