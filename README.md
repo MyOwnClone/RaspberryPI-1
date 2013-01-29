@@ -24,5 +24,5 @@ I am not sure where I am going to go with this. For now it is just like the Temp
   * **Same commands as the Template**   
 
 ##Magnet OS:  
-**This is an experimental iOS application used as an input for these apps.** 
+**This is an experimental iOS application used as an input for these apps.**  
 Nothing has been done here yet. 
