@@ -12,11 +12,12 @@
 		854DA73516B7582800DDAA88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854DA73416B7582800DDAA88 /* CoreGraphics.framework */; };
 		854DA73B16B7582800DDAA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 854DA73916B7582800DDAA88 /* InfoPlist.strings */; };
 		854DA73D16B7582800DDAA88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 854DA73C16B7582800DDAA88 /* main.m */; };
-		854DA74116B7582800DDAA88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 854DA74016B7582800DDAA88 /* AppDelegate.m */; };
 		854DA74316B7582800DDAA88 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 854DA74216B7582800DDAA88 /* Default.png */; };
 		854DA74516B7582800DDAA88 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 854DA74416B7582800DDAA88 /* Default@2x.png */; };
 		854DA74716B7582800DDAA88 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 854DA74616B7582800DDAA88 /* Default-568h@2x.png */; };
 		8550BD2616B75E780024E530 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550BD2516B75E780024E530 /* CoreBluetooth.framework */; };
+		8550BD3916B76B530024E530 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8550BD3616B76B530024E530 /* RootViewController.m */; };
+		8550BD3A16B76B530024E530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8550BD3816B76B530024E530 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +29,14 @@
 		854DA73A16B7582800DDAA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		854DA73C16B7582800DDAA88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		854DA73E16B7582800DDAA88 /* MagnetOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagnetOS-Prefix.pch"; sourceTree = "<group>"; };
-		854DA73F16B7582800DDAA88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		854DA74016B7582800DDAA88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		854DA74216B7582800DDAA88 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		854DA74416B7582800DDAA88 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		854DA74616B7582800DDAA88 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8550BD2516B75E780024E530 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8550BD3516B76B530024E530 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8550BD3616B76B530024E530 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8550BD3716B76B530024E530 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8550BD3816B76B530024E530 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +85,7 @@
 		854DA73616B7582800DDAA88 /* MagnetOS */ = {
 			isa = PBXGroup;
 			children = (
-				854DA73F16B7582800DDAA88 /* AppDelegate.h */,
-				854DA74016B7582800DDAA88 /* AppDelegate.m */,
+				8550BD3416B76B530024E530 /* Classes */,
 				854DA73716B7582800DDAA88 /* Supporting Files */,
 			);
 			path = MagnetOS;
@@ -101,6 +103,17 @@
 				854DA74616B7582800DDAA88 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8550BD3416B76B530024E530 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8550BD3516B76B530024E530 /* AppDelegate.h */,
+				8550BD3816B76B530024E530 /* AppDelegate.m */,
+				8550BD3716B76B530024E530 /* RootViewController.h */,
+				8550BD3616B76B530024E530 /* RootViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				854DA73D16B7582800DDAA88 /* main.m in Sources */,
-				854DA74116B7582800DDAA88 /* AppDelegate.m in Sources */,
+				8550BD3916B76B530024E530 /* RootViewController.m in Sources */,
+				8550BD3A16B76B530024E530 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  RootViewController.h
 //  MagnetOS
 //
 //  Created by Jed Laudenslayer on 1/28/13.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+/**
+ * The root view controller of the app.
+ *
+ * @author Jed Laudenslayer
+ */
+@interface RootViewController : UIViewController
 
 @end
