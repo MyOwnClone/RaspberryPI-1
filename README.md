@@ -22,3 +22,7 @@ The purpse of this will be to build an easy way to create games and apps based o
 **This sample project show the "hello triangle" example running in an objc shell.** 
 I am not sure where I am going to go with this. For now it is just like the Template only with a spinning 3-D cube. 
   * **Same commands as the Template**   
+
+##Magnet OS:  
+**This is an experimental iOS application used as an input for these apps.** 
+Nothing has been done here yet. 
