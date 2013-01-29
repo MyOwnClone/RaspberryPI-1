@@ -9,22 +9,22 @@
 
 - (KColor *)initWithDeviceRed:(VGfloat)red green:(VGfloat)green blue:(VGfloat)blue alpha:(VGfloat)alpha
 {
-	self = [super init];
-	
-	if (self != nil)
-	{
-		self.red = red;
-		self.green = green;
-		self.blue = blue;
-		self.alpha = alpha;
-	}
-	
-	return self;
+    self = [super init];
+    
+    if (self != nil)
+    {
+        self.red = red;
+        self.green = green;
+        self.blue = blue;
+        self.alpha = alpha;
+    }
+    
+    return self;
 }
 
 + (KColor *)colorWithDeviceRed:(VGfloat)red green:(VGfloat)green blue:(VGfloat)blue alpha:(VGfloat)alpha
 {
-	return [[[KColor alloc] initWithDeviceRed:red green:green blue:blue alpha:alpha] autorelease];
+    return [[[KColor alloc] initWithDeviceRed:red green:green blue:blue alpha:alpha] autorelease];
 }
 
 + (KColor *)colorWithHex:(uint)hex

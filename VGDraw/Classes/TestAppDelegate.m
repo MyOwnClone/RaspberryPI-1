@@ -7,14 +7,14 @@
 
 - (void)appDidFinishLaunching
 {
-	AppRootView *rootView = [[AppRootView alloc] init];
-	[[KDisplayManager sharedInstance] loadRootDisplayObject:rootView];
-	[rootView release];
+    AppRootView *rootView = [[AppRootView alloc] init];
+    [[KDisplayManager sharedInstance] loadRootDisplayObject:rootView];
+    [rootView release];
 }
 
 - (void)appRunLoop
 {
-	[[KDisplayManager sharedInstance] loop];
+    [[KDisplayManager sharedInstance] loop];
 }
 
 @end

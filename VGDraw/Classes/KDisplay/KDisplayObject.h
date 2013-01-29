@@ -11,9 +11,9 @@
  */
 @interface KDisplayObject : NSObject
 {
-	VGfloat width_;
-	VGfloat height_;
-	KColor *backgroundColor_;
+    VGfloat width_;
+    VGfloat height_;
+    KColor *backgroundColor_;
 }
 
 /**

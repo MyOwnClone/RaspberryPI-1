@@ -8,7 +8,7 @@
  */
 @interface KDisplayManager : NSObject
 {
-	KDisplayObject *rootObject_;
+    KDisplayObject *rootObject_;
 }
 
 /**

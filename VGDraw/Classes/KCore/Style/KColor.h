@@ -10,10 +10,10 @@
  */
 @interface KColor : NSObject
 {
-	VGfloat red_;
-	VGfloat green_;
-	VGfloat blue_;
-	VGfloat alpha_;
+    VGfloat red_;
+    VGfloat green_;
+    VGfloat blue_;
+    VGfloat alpha_;
 }
 
 /**

@@ -8,25 +8,25 @@
 
 - (id)init
 {
-	self = [super init];
-	
-	if (self != nil)
-	{
-		
-	}
-	
-	return self;
+    self = [super init];
+    
+    if (self != nil)
+    {
+        
+    }
+    
+    return self;
 }
 
 - (void)dealloc
 {
-	[backgroundColor_ release];
-	[super dealloc];
+    [backgroundColor_ release];
+    [super dealloc];
 }
 
 - (void)render
 {
-	
+    
 }
 
 @end
