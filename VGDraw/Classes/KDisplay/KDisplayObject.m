@@ -7,10 +7,27 @@ static BOOL s_reverse = NO;
 
 @synthesize width = width_;
 @synthesize height = height_;
+@synthesize backgroundColor = backgroundColor_;
+
+- (id)init
+{
+	self = [super init];
+	
+	if (self != nil)
+	{
+		self.backgroundColor = [KColor colorWithHex:0xffA3BEFF];
+	}
+	
+	return self;
+}
 
 - (void)render
 {
-	VGfloat color[4] = { s_shift, s_shift, s_shift, 1.0f };
+	VGfloat color[4] = { self.backgroundColor.red, 
+			self.backgroundColor.green, 
+			self.backgroundColor.blue, 
+			s_shift };
+			
 	vgSetfv(VG_CLEAR_COLOR, 4, color);
 	vgClear(0, 0, width_, height_);
 	vgFlush();
