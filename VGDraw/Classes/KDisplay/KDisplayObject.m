@@ -48,6 +48,7 @@ static BOOL s_reverse = NO;
 	else if (s_shift <= 0.0)
 	{
 		s_reverse = NO;
+		self.backgroundColor = [KColor randomColor];
 	}
 }
 
