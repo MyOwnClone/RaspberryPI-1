@@ -11,6 +11,7 @@ LDFLAGS = -L/opt/vc/lib -lbcm_host -lEGL -lGLESv2 -lOpenVG
 
 # Add Headers
 OpenApp_HEADERS = OpenApp.h
+OpenApp_HEADERS += easing.h
 OpenApp_HEADERS += AppRootView.h
 OpenApp_HEADERS += EGLState.h
 OpenApp_HEADERS += TestAppDelegate.h
