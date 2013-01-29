@@ -16,6 +16,7 @@
 		854DA74316B7582800DDAA88 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 854DA74216B7582800DDAA88 /* Default.png */; };
 		854DA74516B7582800DDAA88 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 854DA74416B7582800DDAA88 /* Default@2x.png */; };
 		854DA74716B7582800DDAA88 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 854DA74616B7582800DDAA88 /* Default-568h@2x.png */; };
+		8550BD2616B75E780024E530 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550BD2516B75E780024E530 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		854DA74216B7582800DDAA88 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		854DA74416B7582800DDAA88 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		854DA74616B7582800DDAA88 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8550BD2516B75E780024E530 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8550BD2616B75E780024E530 /* CoreBluetooth.framework in Frameworks */,
 				854DA73116B7582800DDAA88 /* UIKit.framework in Frameworks */,
 				854DA73316B7582800DDAA88 /* Foundation.framework in Frameworks */,
 				854DA73516B7582800DDAA88 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +73,7 @@
 			children = (
 				854DA73016B7582800DDAA88 /* UIKit.framework */,
 				854DA73216B7582800DDAA88 /* Foundation.framework */,
+				8550BD2516B75E780024E530 /* CoreBluetooth.framework */,
 				854DA73416B7582800DDAA88 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
@@ -276,6 +280,7 @@
 				854DA74C16B7582800DDAA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
