@@ -8,7 +8,7 @@ http://www.techotopia.com/index.php/Installing_and_Using_GNUstep_and_Objective-C
 
 ##Template
 **This is just a simple Objective-C project template.**  
-This is meant to be an empty Objective-C shell.
+This is meant to be an empty Objective-C OpenVG/OpenGL shell.
   * **compile:** Compile the app.
   * **crun:** Compile and run the app.
   * **run:** Run the app.
