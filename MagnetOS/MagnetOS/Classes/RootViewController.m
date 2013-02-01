@@ -8,7 +8,26 @@
 
 #import "RootViewController.h"
 
+@interface RootViewController ()
+{
+    
+}
+
+@end
+
 @implementation RootViewController
+
+- (id)init
+{
+    self = [super init];
+    
+    if (self != nil)
+    {
+        
+    }
+    
+    return self;
+}
 
 - (void)loadView
 {

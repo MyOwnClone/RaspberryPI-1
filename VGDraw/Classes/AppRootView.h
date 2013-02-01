@@ -1,16 +1,14 @@
 #import <Foundation/Foundation.h>
-#import "KDisplayObject.h"
+#import <QuartzCore/QuartzCore.h>
 
 /**
  * Root display view for this application.
  *
  * @author Jed Laudenslayer
  */
-@interface AppRootView : KDisplayObject
+@interface AppRootView : CALayer
 {
 
 }
-
-
 
 @end

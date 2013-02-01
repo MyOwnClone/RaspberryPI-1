@@ -13,11 +13,16 @@
  *
  * @author Jed Laudenslayer
  */
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CBPeripheralManagerDelegate>
 
 /**
  * Main window property for this application.
  */
 @property (strong, nonatomic) UIWindow *window;
+
+/**
+ * PeripheralManager
+ */
+@property (strong, nonatomic, readonly) CBPeripheralManager *cbManager;
 
 @end

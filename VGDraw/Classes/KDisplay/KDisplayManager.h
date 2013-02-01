@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "KDisplayObject.h"
+#import <QuartzCore/QuartzCore.h>
 
 /**
  * Display Manager Class
@@ -8,7 +8,7 @@
  */
 @interface KDisplayManager : NSObject
 {
-    KDisplayObject *rootObject_;
+    CALayer *rootLayer_;
 }
 
 /**
@@ -19,9 +19,9 @@
 /**
  * Method used to load and set a root display object.
  *
- * @param displayObject The object to use as the root of your display.
+ * @param layer The layer to use as the root of your display.
  */
-- (void)loadRootDisplayObject:(KDisplayObject *)displayObject;
+- (void)loadRootLayer:(CALayer *)layer;
 
 /**
  * Main display loop.

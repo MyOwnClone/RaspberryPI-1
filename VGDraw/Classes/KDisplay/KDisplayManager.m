@@ -3,14 +3,13 @@
 #import "bcm_host.h"
 #import "EGLState.h"
 
-/**
- * State of the display.
- */
+//! State of the display.
 static STATE_T _state, *state = &_state;
 
-@implementation KDisplayManager
-
+//! Singleton instance
 static void *volatile sharedInstance = nil;
+
+@implementation KDisplayManager
 
 + (KDisplayManager *)sharedInstance
 {
@@ -51,25 +50,25 @@ static void *volatile sharedInstance = nil;
     [super dealloc];
 }
 
-- (void)loadRootDisplayObject:(KDisplayObject *)displayObject
+- (void)loadRootLayer:(CALayer *)layer
 {
-    if (rootObject_ != nil)
+    if (rootLayer_ != nil)
     {
-        [rootObject_ release];
-        rootObject_ = nil;
+        [rootLayer_ release];
+        rootLayer_ = nil;
     }
 
-    rootObject_ = [displayObject retain];
+    rootLayer_ = [layer retain];
     
-    rootObject_.width = (float)state->screen_width;
-    rootObject_.height = (float)state->screen_height;
+    //rootLayer_.width = (float)state->screen_width;
+    //rootLayer_.height = (float)state->screen_height;
 }
 
 - (void)loop
 {
-    if (rootObject_ != nil)
+    if (rootLayer_ != nil)
     {
-        [rootObject_ render];
+        //[rootLayer_ render];
         eglSwapBuffers(state->display, state->surface);
     }
 

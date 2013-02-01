@@ -8,7 +8,7 @@
 - (void)appDidFinishLaunching
 {
     AppRootView *rootView = [[AppRootView alloc] init];
-    [[KDisplayManager sharedInstance] loadRootDisplayObject:rootView];
+    [[KDisplayManager sharedInstance] loadRootLayer:rootView];
     [rootView release];
 }
 
