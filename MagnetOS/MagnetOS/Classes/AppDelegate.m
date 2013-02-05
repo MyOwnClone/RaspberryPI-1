@@ -56,6 +56,7 @@ static BOOL s_sendingEOM = NO;
     if (cbManager_ == nil)
     {
         cbManager_ = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+        CBCentralManagerScanOptionAllowDuplicatesKey
     }
     
     return cbManager_;
