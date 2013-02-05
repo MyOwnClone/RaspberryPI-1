@@ -24,7 +24,7 @@ TOOL_NAME = OpenApp
 # Add Includes/Libs
 OpenApp_OBJCFLAGS = -I/opt/vc/include
 OpenApp_OBJCFLAGS += -I/opt/vc/include/interface/vcos/pthreads
-LDFLAGS = -L/opt/vc/lib -lbcm_host -lEGL -lGLESv2 -lOpenVG -lQuartzCore -lbluetooth 
+LDFLAGS = -L/opt/vc/lib -lbcm_host -lEGL -lGLESv2 -lOpenVG -lQuartzCore -lCoreBluetooth -lbluetooth 
 
 # Add Headers
 OpenApp_HEADERS = OpenApp.h
