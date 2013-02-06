@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
-#import <CoreFoundation/CoreFoundation.h>
 
 #define kMagnetOS_UUID @"649E209C-111B-41D9-B424-F99733B8993F"
 #define kCharacteristic_UUID @"3CBCB608-F1AF-4D49-B6D4-05ED0AE235FE"
@@ -22,7 +21,7 @@ static BOOL s_sendingEOM = NO;
 /**
  * Send end of message.
  */
-- (void)sendEndOfMessage;CBUUID
+- (void)sendEndOfMessage;
 
 /**
  * Setup the MagnetOS service.
