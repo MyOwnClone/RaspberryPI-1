@@ -1,3 +1,5 @@
+[![endorse](http://api.coderwall.com/kwigbo/endorsecount.png)](http://coderwall.com/kwigbo)
+
 RaspberryPI
 ===========
 
