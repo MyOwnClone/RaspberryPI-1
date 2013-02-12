@@ -11,17 +11,16 @@
     
     if (self != nil)
     {
-        NSLog(@"Create Data!");
         data_ = [[NSMutableData alloc] init];
-        NSLog(@"Create cbManager_!");
         cbManager_ = [[CBCentralManager alloc] initWithDelegate:self];
-        NSLog(@"Create serviceID_!");
         serviceID_ = [[CBUUID UUIDWithString:kMagnetOS_UUID] retain];
-        NSLog(@"Create characteristicID_!");
         characteristicID_ = [[CBUUID UUIDWithString:kCharacteristic_UUID] retain];
         
-        NSLog(@"serviceID_: %@ \n", serviceID_);
-        NSLog(@"characteristicID_: %@ \n", characteristicID_);
+        NSLog(@"Create serviceID: %@ \n", kMagnetOS_UUID);
+        NSLog(@"Create characteristicID: %@ \n", kCharacteristic_UUID);
+        
+        NSLog(@"serviceID: %@ \n", serviceID_);
+        NSLog(@"characteristicID: %@ \n", characteristicID_);
     }
     
     return self;

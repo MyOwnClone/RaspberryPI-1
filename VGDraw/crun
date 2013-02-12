@@ -1,4 +1,11 @@
-. /usr/share/GNUstep/Makefiles/GNUstep.sh
+cd ~/Documents/libs/gnustep-corebase/
+make
+sudo make install
+
+cd ~/Documents/libs/CoreBluetooth/
+./compile
+
+cd ~/Documents/raspi/VGDraw/
 ./compile
 cd build/obj/
 ./OpenApp
